@@ -134,7 +134,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Wei Cheng - [@chengwei0815](https://twitter.com/your_username) - chengwei0815@gmail.com
+Your Name - [@chengwei0815](https://twitter.com/chengwei0815) - chengwei0815@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
