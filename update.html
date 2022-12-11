@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Page</title>
+</head>
+
+<body>
+    <!--the navbar-->
+    <header><!--the CodeSquad Comics logo-->
+        <a href="./index.html" target="_self"><!--the nacbar logo link, not open in a new tab--><img src="public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo"></a>
+    </header>
+
+    <ul><!--the bulleted list of the three navigation links-->
+        <li><a href="./index.html" target="_blank" rel=”noopener noreferrer">HOME</a></li>
+        <li><a href="./about.html" target="_blank" rel=”noopener noreferrer">ABOUT</a></li>
+        <li><a href="./login.html" target="_blank" rel=”noopener noreferrer">LOGIN</a></li>
+    </ul>
+    <!--the end of navbar-->
+
+    <h1>UPDATE COMIC</h1>
+        <form action="#">
+            <p><label for="title">Title: </label><input type="text" id="title" value="title value stored in database" name="title"></p>
+
+            <p><label for="author">Author: </label><input type="text" id="author" value="author value stored in database" name="author"></p>
+
+            <p><label for="publisher">Publisher: </label>
+                <select name="publisher" id="publisher">
+                    <option value="#">publisher value stored in database</option>
+                    <option value="BOOM! Box">BOOM! Box</option>
+                    <option value="DC Comics">DC Comics</option>
+                    <option value="Harry N. Abrams">Harry N. Abrams</option>
+                    <option value="Icon Books">Icon Books</option>
+                    <option value="Image Comics">Image Comics</option>
+                    <option value="Marvel">Marvel</option>
+                    <option value="Simon & Schuster">Simon & Schuster</option>
+                    <option value="Top Shelf Productions">Top Shelf Productions</option>
+                    <option value="VIZ Media LLC">VIZ Media LLC</option>
+                </select></p>
+
+            <p><label for="genre">Genre: </label><input type="text" id="genre" value="genre data stored in database" name="genre"></p>
+
+            <p><label for="numberOfPages">Number of pages: </label><input type="text" id="numberOfPages" value="255" name="numberOfPages"></p>
+
+            <p><label for="rating">Rating: </label><input type="text" id="rating" value="5" name="rating"></p>
+
+            <p><label for="synopsis">Synopsis: </label><textarea aria-placeholder="#" id="synopsis" name="synopsis">synopsis value stored in database</textarea></p>
+        </form><br>
+
+        <button type="button">Submit</button>
+
+    <!--the footer-->
+    <footer>
+        <h3><b>VISIT US</b></h3>
+            <p>CodeSquad Comics
+            <br>123 Dorchester Avenue
+            <br> Boston, MA 02124</p>
+
+        <h3><b>LINKS</b></h3>
+            <p><a href="./index.html" target="_blank" rel=”noopener noreferrer">Home</a>
+            <br><a href="./about.html" target="_blank" rel=”noopener noreferrer">About</a>
+            <br><a href="./login.html" target="_blank" rel=”noopener noreferrer">Login</a></p>
+
+        <h3><b>FOLLOW US</b></h3>
+            <p><a href="#" target="_self">Facebook</a>
+            <br><a href="#" target="_self">Instagram</a>
+            <br><a href="https://twitter.com/chengwei0815" target="_blank" rel=”noopener noreferrer">Twitter</a></p>
+
+        <h3><b>A PRODUCT OF</b></h3>
+            <a href="http://codesquad.org/" target="_blank" rel=”noopener noreferrer"><!--the footer logo link, open in a new tab--><img src="./public/images/CodeSquad-logo-a.png" alt="CodeSquad logo"></a>
+    </footer>
+
+</body>
+
+</html>
