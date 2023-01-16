@@ -15,68 +15,68 @@ body {
     --White: #FFFFFF;
 }
 
-/*element selector*/
-header {
-    background-color: var(--Blue);
-    width: 1000px;
-    height: 100px;
-    padding: 10px;
-}
-
+/* header and footer */
 nav {
     background-color: var(--Blue);
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    height: 220px;
     color: var(--White);
-    padding: 10px;
+    font-size: 1.4rem;
 }
 
 footer {
     background-color: var(--Blue);
-    width: 1000px;
-    height: 600px;
-    font-size: medium;
+    width: 100%;
+    height: 230px;
     color: var(--White);
-    padding: 10px;
-    border-top: solid var(--Yellow) 8px;
+    border-top: solid var(--Yellow) 5px;
 }
 
-/*class selector*/
 .header-logo {
-    width: 400px;
+    width: 300px;
+    margin: 20px;
 }
 
 .footer-logo {
-    width: 200px;
+    width: 150px;
 }
 
 a:link,
 a:visited {
-    font-size: 1rem;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--white);
 }
 
-a:hover,
-a:active {
+a:hover {
     color: var(--Yellow);
     text-decoration: none;
+    font-weight: bold;
 }
 
+a:active {
+    color: var(--Blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* watchmen card */
 .card {
     box-sizing: border-box;
     width: 800px;
     height: 1450px;
-    margin: 50px 100px 80px 100px;
-    border: solid var(--Yellow) 8px;
-    border-radius: 50px;
+    margin: 100px auto;
 }
 
 .card-top {
     background-color: var(--Blue);
     border-radius: 40px 40px 0 0;
-    border-bottom: solid var(--Yellow) 5px;
     padding: 30px 150px;
+    border-top: solid var(--Yellow) 8px;
+    border-right: solid var(--Yellow) 8px;
+    border-left: solid var(--Yellow) 8px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .card-photo {
@@ -84,6 +84,7 @@ a:active {
     width: 500px;
     border: solid var(--White) 5px;
     border-radius: 50px;
+    margin-bottom: 50px;
 }
 
 .card-label {
@@ -96,6 +97,10 @@ a:active {
 
 .card-bottom {
     padding: 20px 50px;
+    background-color: var(--White);
+    border: solid var(--Yellow) 8px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .content-blut-underline-font {
@@ -107,4 +112,185 @@ a:active {
 
 .content-italic-font {
     font-style: italic;
+}
+
+/* homework-4 added CSS styling */
+.header-home {
+    margin: 0 80px 0 140px;
+}
+
+.header-about,
+.header-login {
+    margin: 80px;
+}
+
+.footer {
+    display: inline-block;
+    margin: 25px 150px 25px 50px;
+}
+
+.footer-color {
+    color: var(--Yellow);
+}
+
+body {
+    background-image: linear-gradient(var(--White), var(--Teal));
+    height: 100%;
+}
+
+.body-square {
+    background-color: var(--White);
+    padding: 50px;
+    width: 80%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--Blue);
+    margin: 80px auto;
+}
+
+.body-h1,
+.body-h2 {
+    color: var(--Blue);
+    text-align: center;
+}
+
+.body-h2 {
+    margin-top: 80px;
+    font-size:x-large;
+}
+
+/* admin page */
+/* * {
+    box-sizing: border-box;
+} */
+
+.table-admin {
+    border-collapse: collapse;
+    margin: auto;
+    border: 2px solid black;
+    font-size: larger;
+}
+
+.table-admin th {
+    background-color: var(--Grey);
+}
+
+.table-admin tr:nth-child(even) {
+    background-color: var(--Grey);
+}
+
+.table-admin td,
+.table-admin th {
+    border: 2px solid black;
+    padding: 10px 15px;
+    /* font-size: larger; */
+}
+
+.button-add-new-comic {
+    margin-left: 45%;
+    margin-bottom: 40px;
+}
+
+.button-yellow {
+    background-color: var(--Yellow);
+    /* margin: 5px 20px 5px 20px; */
+}
+
+.button-edit {
+    background-color: var(--Blue);
+    color: var(--White);
+    padding-left: 25px;
+    padding-right: 25px;
+    /* margin: 5px 20px 5px 20px; */
+}
+
+button:hover {
+    background-color: var(--Grey);
+}
+
+/* create page */
+.body-create {
+    text-align: right;
+    font-size: larger;
+}
+
+.body-square input[type=text],
+.body-square input[type=number],
+.body-square select,
+.body-square textarea{
+    width: 350px;
+    /* margin-right: 35%; */
+    padding: 4px;
+    margin: 13px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-square textarea {
+    resize: none;
+    height: 150px;
+    display: inline-block;
+}
+
+.form-content {
+    margin-right: 35%;
+}
+
+.button-create {
+    margin-right: 50%;
+    /* font-size: 1.2rem; */
+    padding: 4px 25px;
+}
+
+label[for=synopsis] {
+    /* display: block;
+    float:left; */
+    /* /* margin-left: 50%; */
+    vertical-align: top;
+}
+
+/* index page */
+.body-square-top,
+.body-square-bottom {
+    background-color: var(--White);
+    padding: 50px;
+    width: 80%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--Blue);
+    margin: 80px auto;
+
+}
+
+/* login page */
+.button-login {
+    margin-right: 50%;
+    /* font-size: 1.2rem; */
+    padding: 7px 20px;
+}
+
+.body-login {
+    text-align: right;
+    font-size: larger;
+}
+
+.body-square input[type=text],
+.body-square input[type=password]
+{
+    width: 350px;
+    /* margin-right: 35%; */
+    padding: 4px;
+    margin: 13px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* update page */
+.button-update {
+    margin-right: 50%;
+    /* font-size: 1.2rem; */
+    padding: 5px 25px;
+}
+
+.body-update {
+    text-align: right;
+    font-size: larger;
 }
