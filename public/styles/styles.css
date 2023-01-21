@@ -3,102 +3,155 @@ body {
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    background-image: linear-gradient(var(--white), var(--teal));
+    /* height: 100%; */
 }
 
-/*set variables*/
+* {
+    box-sizing: border-box;
+}
+
+/* set variables */
 :root {
-    --Teal: #006B6B;
-    --Light-Teal: #009E9E;
-    --Yellow: #FCCF14;
-    --Blue: #063C5E;
-    --Grey: #C2C2C2;
-    --White: #FFFFFF;
-}
-
-/* header and footer */
-nav {
-    background-color: var(--Blue);
-    width: 100%;
-    height: 220px;
-    color: var(--White);
+    --teal: #006B6B;
+    --light-teal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    --grey: #C2C2C2;
+    --white: #FFFFFF;
     font-size: 1.4rem;
 }
 
-footer {
-    background-color: var(--Blue);
+/* navbar styling */
+nav {
+    background-color: var(--blue);
     width: 100%;
-    height: 230px;
-    color: var(--White);
-    border-top: solid var(--Yellow) 5px;
+    /* height: 220px; */
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.header-logo {
+.container-heater {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-heater a {
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+nav img {
     width: 300px;
-    margin: 20px;
+    margin: 30px 20px;
 }
 
-.footer-logo {
-    width: 150px;
-}
-
-a:link,
-a:visited {
+.container-heater a:link,
+.container-heater a:visited {
     text-decoration: none;
     color: var(--white);
 }
 
-a:hover {
-    color: var(--Yellow);
-    text-decoration: none;
+.container-heater a:hover {
+    color: var(--yellow);
     font-weight: bold;
 }
 
-a:active {
-    color: var(--Blue);
+.container-heater a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+footer {
+    background-color: var(--blue);
+    width: 100%;
+    /* height: 230px; */
+    color: var(--white);
+    border-top: solid var(--yellow) 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding:50px 5px;
+}
+
+footer h3 {
+    font-size: 1rem;
+    color: var(--yellow);
+    /* padding: 0 5px; */
     text-decoration: none;
+    margin-top: auto;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+
+.container-footer {
+    padding: 10px 10px;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--yellow);
     font-weight: bold;
 }
 
+footer a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
 
-/* watchmen card */
+/* comic-detail page styling */
 .card {
-    box-sizing: border-box;
-    width: 800px;
-    height: 1450px;
+    width: 30%;
     margin: 100px auto;
 }
 
 .card-top {
-    background-color: var(--Blue);
+    background-color: var(--blue);
     border-radius: 40px 40px 0 0;
-    padding: 30px 150px;
-    border-top: solid var(--Yellow) 8px;
-    border-right: solid var(--Yellow) 8px;
-    border-left: solid var(--Yellow) 8px;
+    padding: 30px;
+    border-top: solid var(--yellow) 8px;
+    border-right: solid var(--yellow) 8px;
+    border-left: solid var(--yellow) 8px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    width: 100%;
 }
 
 .card-photo {
-    box-sizing: border-box;
-    width: 500px;
-    border: solid var(--White) 5px;
+    width: 400px;
+    border: solid var(--white) 5px;
     border-radius: 50px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
 }
 
 .card-label {
-    font-size:x-large;
     font-weight: bold;
-    color: var(--Yellow);
-    padding: 5px 0 20px 0;
+    color: var(--yellow);
     text-align: center;
 }
 
 .card-bottom {
     padding: 20px 50px;
-    background-color: var(--White);
-    border: solid var(--Yellow) 8px;
+    background-color: var(--white);
+    border: solid var(--yellow) 8px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -106,7 +159,7 @@ a:active {
 .content-blut-underline-font {
     font-style: underline;
     font-weight: bold;
-    color: var(--Blue);
+    color: var(--blue);
     text-decoration: underline;
 }
 
@@ -114,104 +167,79 @@ a:active {
     font-style: italic;
 }
 
-/* homework-4 added CSS styling */
-.header-home {
-    margin: 0 80px 0 140px;
-}
-
-.header-about,
-.header-login {
-    margin: 80px;
-}
-
-.footer {
-    display: inline-block;
-    margin: 25px 150px 25px 50px;
-}
-
-.footer-color {
-    color: var(--Yellow);
-}
-
-body {
-    background-image: linear-gradient(var(--White), var(--Teal));
-    height: 100%;
-}
-
+/* body container styling */
 .body-square {
-    background-color: var(--White);
+    background-color: var(--white);
     padding: 50px;
     width: 80%;
     border-style: solid;
     border-width: 5px;
-    border-color: var(--Blue);
+    border-color: var(--blue);
     margin: 80px auto;
 }
 
 .body-h1,
 .body-h2 {
-    color: var(--Blue);
+    color: var(--blue);
     text-align: center;
+}
+
+.body-square p {
+    margin: 70px 10px;
 }
 
 .body-h2 {
     margin-top: 80px;
-    font-size:x-large;
+}
+
+/* about page styling */
+.collection-details {
+    display: flex;
+    justify-content: center;
 }
 
 /* admin page */
-/* * {
-    box-sizing: border-box;
-} */
-
 .table-admin {
     border-collapse: collapse;
-    margin: auto;
+    margin: 50px auto;
+    /* margin-top: 50px; */
     border: 2px solid black;
     font-size: larger;
 }
 
 .table-admin th {
-    background-color: var(--Grey);
+    background-color: var(--grey);
 }
 
 .table-admin tr:nth-child(even) {
-    background-color: var(--Grey);
+    background-color: var(--grey);
 }
 
 .table-admin td,
 .table-admin th {
     border: 2px solid black;
     padding: 10px 15px;
-    /* font-size: larger; */
-}
-
-.button-add-new-comic {
-    margin-left: 45%;
-    margin-bottom: 40px;
 }
 
 .button-yellow {
-    background-color: var(--Yellow);
-    /* margin: 5px 20px 5px 20px; */
+    background-color: var(--yellow);
+    padding: 5px 25px;
 }
 
 .button-edit {
-    background-color: var(--Blue);
-    color: var(--White);
+    background-color: var(--blue);
+    color: var(--white);
     padding-left: 25px;
     padding-right: 25px;
-    /* margin: 5px 20px 5px 20px; */
 }
 
 button:hover {
-    background-color: var(--Grey);
+    background-color: var(--grey);
 }
 
-/* create page */
+/* create page styling */
 .body-create {
     text-align: right;
-    font-size: larger;
 }
 
 .body-square input[type=text],
@@ -219,7 +247,6 @@ button:hover {
 .body-square select,
 .body-square textarea{
     width: 350px;
-    /* margin-right: 35%; */
     padding: 4px;
     margin: 13px 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -232,39 +259,66 @@ button:hover {
 }
 
 .form-content {
-    margin-right: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .button-create {
-    margin-right: 50%;
-    /* font-size: 1.2rem; */
-    padding: 4px 25px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 label[for=synopsis] {
-    /* display: block;
-    float:left; */
-    /* /* margin-left: 50%; */
     vertical-align: top;
 }
 
 /* index page */
-.body-square-top,
-.body-square-bottom {
-    background-color: var(--White);
-    padding: 50px;
-    width: 80%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--Blue);
-    margin: 80px auto;
+.body-square img {
+    width: 200px;
+}
 
+.details a:link,
+.details a:visited {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.details a:hover {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.details a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+.container-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:fit-content;
+    text-align: center;
+    align-items: flex-start;
+}
+.container-details p {
+    width:230px;
+    margin: auto;
+}
+
+.container-details img {
+    margin-bottom: 30px;
+}
+
+.index-details {
+    padding: 10px 10px;
 }
 
 /* login page */
 .button-login {
     margin-right: 50%;
-    /* font-size: 1.2rem; */
     padding: 7px 20px;
 }
 
@@ -277,20 +331,7 @@ label[for=synopsis] {
 .body-square input[type=password]
 {
     width: 350px;
-    /* margin-right: 35%; */
     padding: 4px;
     margin: 13px 3px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/* update page */
-.button-update {
-    margin-right: 50%;
-    /* font-size: 1.2rem; */
-    padding: 5px 25px;
-}
-
-.body-update {
-    text-align: right;
-    font-size: larger;
 }
