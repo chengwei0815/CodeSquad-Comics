@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     background-image: linear-gradient(var(--white), var(--teal));
     /* height: 100%; */
+    font-size: 1.4rem; /* homework-6 change of styling*/
 }
 
 * {
@@ -19,7 +20,6 @@ body {
     --blue: #063C5E;
     --grey: #C2C2C2;
     --white: #FFFFFF;
-    font-size: 1.4rem;
 }
 
 /* navbar styling */
@@ -39,6 +39,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
 }
 
 .container-heater a {
@@ -79,10 +80,10 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     padding:50px 5px;
+    font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
 }
 
 footer h3 {
-    font-size: 1rem;
     color: var(--yellow);
     /* padding: 0 5px; */
     text-decoration: none;
@@ -115,10 +116,16 @@ footer a:active {
     background-color: var(--yellow);
 }
 
+footer .follow-us {
+    display: flex;
+    justify-content: space-between;/* homework-6 styling change*/
+}
+
 /* comic-detail page styling */
 .card {
-    width: 30%;
+    width: 650px; /* homework-6 change of styling*/
     margin: 100px auto;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
 }
 
 .card-top {
@@ -146,6 +153,7 @@ footer a:active {
     font-weight: bold;
     color: var(--yellow);
     text-align: center;
+    font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
 }
 
 .card-bottom {
@@ -176,12 +184,14 @@ footer a:active {
     border-width: 5px;
     border-color: var(--blue);
     margin: 80px auto;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
 }
 
 .body-h1,
 .body-h2 {
     color: var(--blue);
     text-align: center;
+    font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
 }
 
 .body-square p {
@@ -198,7 +208,7 @@ footer a:active {
     justify-content: center;
 }
 
-/* admin page */
+/* admin page styling */
 .table-admin {
     border-collapse: collapse;
     margin: 50px auto;
@@ -221,16 +231,21 @@ footer a:active {
     padding: 10px 15px;
 }
 
+table {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif ; /* homework-6 styling change*/
+}
+
 .button-yellow {
     background-color: var(--yellow);
     padding: 5px 25px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /* homework-6 styling change*/
 }
 
 .button-edit {
     background-color: var(--blue);
     color: var(--white);
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 5px 39px; /* homework-6 styling change*/
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /* homework-6 styling change*/
 }
 
 button:hover {
@@ -249,7 +264,7 @@ button:hover {
     width: 350px;
     padding: 4px;
     margin: 13px 3px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
 }
 
 .body-square textarea {
@@ -333,5 +348,125 @@ label[for=synopsis] {
     width: 350px;
     padding: 4px;
     margin: 13px 3px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
 }
+
+/* Target mobile screen */
+@media screen and (min-width: 400px) and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .container-footer-create{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav img {
+        width: 200px;
+        margin-top: 0;
+    }
+
+    .container-heater {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: right;
+        margin: 25px;
+    }
+
+    .container-heater a {
+        padding: 5px;
+    }
+
+    .body-h1,
+    .body-h2 {
+        font-size: 1.2rem;
+        }
+
+    .form-content {
+        text-align: left;
+
+    }
+    .body-square input[type=text],
+    .body-square input[type=number],
+    .body-square select,
+    .body-square textarea {
+        width: 300px;
+    }
+
+    .body-square input[type=text],
+    .body-square input[type=password] {
+        width: 250px;
+    }
+}
+
+/* Target tablet screen sizes */
+@media screen and (min-width: 481px) and (max-width: 920px) {
+    body {
+            font-size: 1rem;
+        }
+
+    .container-footer-create {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav img {
+        width: 200px;
+        margin-top: 0;
+    }
+
+    .container-heater {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: right;
+        margin: 25px;
+    }
+
+    .container-heater a {
+        padding: 5px;
+    }
+
+    .body-h1,
+    .body-h2 {
+        font-size: 1.5rem;
+    }
+
+    .body-square input[type=text],
+    .body-square input[type=number],
+    .body-square input[type=password],
+    .body-square select,
+    .body-square textarea {
+        width: 300px;
+    }
+
+    label[for=title],
+    label[for=author],
+    label[for=publisher],
+    label[for=genre],
+    label[for=numberOfPages],
+    label[for=rating],
+    label[for=synopsis] {
+        padding-right: 300px;
+        display: inline-flex;
+    }
+
+    label[for=emailAddress],
+    label[for=password] {
+        padding-right: 300px;
+        display: inline-flex;
+    }
+
+}
+
+/* Target desktop screen size */
+/* @media screen and (min-width: 921px) {
+
+
+} */
+/* smartphones: 320 - 480
+   ipads: 481 - 768
+   desktop: 769 - 1024 */
