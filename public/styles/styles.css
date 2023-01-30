@@ -121,48 +121,7 @@ footer .follow-us {
     justify-content: space-between;/* homework-6 styling change*/
 }
 
-/* comic-detail page styling */
-.card {
-    width: 650px; /* homework-6 change of styling*/
-    margin: 100px auto;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
-}
 
-.card-top {
-    background-color: var(--blue);
-    border-radius: 40px 40px 0 0;
-    padding: 30px;
-    border-top: solid var(--yellow) 8px;
-    border-right: solid var(--yellow) 8px;
-    border-left: solid var(--yellow) 8px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    width: 100%;
-}
-
-.card-photo {
-    width: 400px;
-    border: solid var(--white) 5px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-}
-
-.card-label {
-    font-weight: bold;
-    color: var(--yellow);
-    text-align: center;
-    font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
-}
-
-.card-bottom {
-    padding: 20px 50px;
-    background-color: var(--white);
-    border: solid var(--yellow) 8px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
 
 .content-blut-underline-font {
     font-style: underline;
@@ -212,9 +171,7 @@ footer .follow-us {
 .table-admin {
     border-collapse: collapse;
     margin: 50px auto;
-    /* margin-top: 50px; */
     border: 2px solid black;
-    font-size: larger;
 }
 
 .table-admin th {
@@ -228,7 +185,8 @@ footer .follow-us {
 .table-admin td,
 .table-admin th {
     border: 2px solid black;
-    padding: 10px 15px;
+    padding: 10px 5px;
+    font-size: 1rem;
 }
 
 table {
@@ -237,14 +195,14 @@ table {
 
 .button-yellow {
     background-color: var(--yellow);
-    padding: 5px 25px;
+    padding: 5px 5px;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /* homework-6 styling change*/
 }
 
 .button-edit {
     background-color: var(--blue);
     color: var(--white);
-    padding: 5px 39px; /* homework-6 styling change*/
+    padding: 5px 19px; /* homework-6 styling change*/
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;  /* homework-6 styling change*/
 }
 
@@ -339,7 +297,7 @@ label[for=synopsis] {
 
 .body-login {
     text-align: right;
-    font-size: larger;
+    /* font-size: larger; */
 }
 
 .body-square input[type=text],
@@ -352,7 +310,7 @@ label[for=synopsis] {
 }
 
 /* Target mobile screen */
-@media screen and (min-width: 400px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     body {
         font-size: 1rem;
     }
@@ -363,21 +321,12 @@ label[for=synopsis] {
         justify-content: flex-start;
     }
 
-    nav img {
-        width: 200px;
-        margin-top: 0;
+    .container-footer {
+        padding-bottom: 60px;
     }
 
     .container-heater {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: right;
-        margin: 25px;
-    }
-
-    .container-heater a {
-        padding: 5px;
+        display: none;
     }
 
     .body-h1,
@@ -400,23 +349,63 @@ label[for=synopsis] {
     .body-square input[type=password] {
         width: 250px;
     }
+
+    .nav-bar {
+        position: absolute; /* homework-7 */
+        top: 50px;
+        right: 50px;
+    }
+
+    /* comic-detail page styling */
+    .card {
+        width: min-content; /* homework-6 change of styling*/
+        margin: 100px auto;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif; /* homework-6 styling change*/
+    }
+
+    .card-top {
+        background-color: var(--blue);
+        border-radius: 40px 40px 0 0;
+        padding: 30px;
+        border-top: solid var(--yellow) 8px;
+        border-right: solid var(--yellow) 8px;
+        border-left: solid var(--yellow) 8px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        width: 100%;
+    }
+
+    .card-photo {
+        width: 400px;
+        border: solid var(--white) 5px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .card-label {
+        font-weight: bold;
+        color: var(--yellow);
+        text-align: center;
+        font-family: 'Fredericka the Great', Times, serif; /* homework-6 change of styling*/
+    }
+
+    .card-bottom {
+        padding: 20px 50px;
+        background-color: var(--white);
+        border: solid var(--yellow) 8px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
 }
 
 /* Target tablet screen sizes */
-@media screen and (min-width: 481px) and (max-width: 920px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     body {
             font-size: 1rem;
         }
-
-    .container-footer-create {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav img {
-        width: 200px;
-        margin-top: 0;
-    }
 
     .container-heater {
         display: flex;
@@ -443,30 +432,127 @@ label[for=synopsis] {
         width: 300px;
     }
 
-    label[for=title],
-    label[for=author],
-    label[for=publisher],
-    label[for=genre],
-    label[for=numberOfPages],
-    label[for=rating],
-    label[for=synopsis] {
-        padding-right: 300px;
-        display: inline-flex;
-    }
-
     label[for=emailAddress],
     label[for=password] {
         padding-right: 300px;
         display: inline-flex;
     }
 
+    /* homework-7 */
+    .container-heater {
+        display: none;
+    }
+
+    .nav-bar {
+        position: absolute;
+        /* homework-7 */
+        top: 50px;
+        right: 50px;
+    }
+
+    /* comic-detail page styling */
+    .card {
+        width: min-content;
+        /* homework-6 change of styling*/
+        margin: 100px auto;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        /* homework-6 styling change*/
+    }
+
+    .card-top {
+        background-color: var(--blue);
+        border-radius: 40px 40px 0 0;
+        padding: 30px;
+        border-top: solid var(--yellow) 8px;
+        border-right: solid var(--yellow) 8px;
+        border-left: solid var(--yellow) 8px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        width: 100%;
+    }
+
+    .card-photo {
+        width: 400px;
+        border: solid var(--white) 5px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .card-label {
+        font-weight: bold;
+        color: var(--yellow);
+        text-align: center;
+        font-family: 'Fredericka the Great', Times, serif;
+        /* homework-6 change of styling*/
+    }
+
+    .card-bottom {
+        padding: 20px 50px;
+        background-color: var(--white);
+        border: solid var(--yellow) 8px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 }
 
-/* Target desktop screen size */
-/* @media screen and (min-width: 921px) {
+/* homework-7 */
+@media screen and (min-width: 1024px) {
+    .nav-bar {
+        display: none;
+    }
 
+    /* comic-detail page styling */
+    .card {
+        width: min-content;
+        /* homework-6 change of styling*/
+        margin: 100px auto;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        /* homework-6 styling change*/
+        display: flex;
 
-} */
+    }
+
+    .card-top {
+        background-color: var(--blue);
+        /* border-radius: 40px 40px 0 0; */
+        padding: 30px;
+        border-top: solid var(--yellow) 8px;
+        border-bottom: solid var(--yellow) 8px;
+        border-left: solid var(--yellow) 8px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        /* width: 100%; */
+    }
+
+    .card-photo {
+        width: 400px;
+        border: solid var(--white) 5px;
+        border-radius: 50px;
+        margin: 20px auto;
+    }
+
+    .card-label {
+        font-weight: bold;
+        color: var(--yellow);
+        text-align: center;
+        font-family: 'Fredericka the Great', Times, serif;
+        /* homework-6 change of styling*/
+    }
+
+    .card-bottom {
+        padding: 20px 50px;
+        background-color: var(--white);
+        border-top: solid var(--yellow) 8px;
+        border-bottom: solid var(--yellow) 8px;
+        border-right: solid var(--yellow) 8px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        width: 600px;
+    }
+}
+
 /* smartphones: 320 - 480
    ipads: 481 - 768
    desktop: 769 - 1024 */
