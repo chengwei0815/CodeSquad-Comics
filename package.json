@@ -1,0 +1,33 @@
+{
+  "name": "codesquad-comics",
+  "version": "1.0.0",
+  "description": "Course project: CODESQUAD COMICS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSquad-Boston/course-project-chengwei0815.git"
+  },
+  "author": "Wei CHENG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSquad-Boston/course-project-chengwei0815/issues"
+  },
+  "homepage": "https://github.com/CodeSquad-Boston/course-project-chengwei0815#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
