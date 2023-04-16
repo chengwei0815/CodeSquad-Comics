@@ -1,0 +1,31 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar') -%>
+
+<div class="body-square">
+    <h1 class="body-h1">CODESQUAD COMICS</h1>
+        <p>CodeSquad Comics is a collection of graphic novels read by Wei Cheng. The site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.</p><br>
+</div>
+<div class="body-square">
+    <h2 class="body-h2">COMPLETE COMIC COLLECTION</h2>
+    <div class="container-details">
+      <% for (book of inventoryArray) { %>
+        <div class="index-details">
+            <a href="/books/<%= book._id %>">
+                <img src="<%= book.image %>" alt="Cover of <%= book.title %>">
+            </a>
+            <p>
+                <span class="content-italic-font"><%= book.title %></span>
+                <br>by <%= book.author %>
+                <br><%= book.rating %> stars
+            </p>
+            <div class="details"><a href="/books/<%= book._id %>">Details</a></div>
+        </div>
+      <% } %>
+
+    </div>
+
+        <div class="button-create"><button class="button-yellow" type="submit">DISPLAY MORE</button></div>
+</div>
+
+<%- include('../partials/footer') -%>
