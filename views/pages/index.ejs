@@ -9,7 +9,7 @@
 <div class="body-square">
     <h2 class="body-h2">COMPLETE COMIC COLLECTION</h2>
     <div class="container-details">
-      <% for (book of inventoryArray) { %>
+      <% for (book of booksArray) { %>
         <div class="index-details">
             <a href="/books/<%= book._id %>">
                 <img src="<%= book.image %>" alt="Cover of <%= book.title %>">

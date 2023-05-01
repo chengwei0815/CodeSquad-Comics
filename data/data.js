@@ -1,6 +1,6 @@
-const { v4:uuid } = require('uuid');
+const { v4: uuid } = require('uuid');
 
-module.exports = [
+module.exports  =  [
     {
         _id: uuid(),
         title: "Fun Home: A Family Tragicomic",
@@ -10,8 +10,7 @@ module.exports = [
         publisher: 'Mariner Books',
         genre: 'memoir',
         pages: 232,
-        synopsis: 'In this graphic memoir, Alison Bechdel charts her fraught relationship with her late father.',
-        synopsis2: 'Distant and exacting, Bruce Bechdel was an English teacher and director of the town funeral home, which Alison and her family referred to as the Fun Home. It was not until college that Alison, who had recently come out as a lesbian, discovered that her father was also gay. A few weeks after this revelation, he was dead, leaving a legacy of mystery for his daughter to resolve.',
+        synopsis: "In this graphic memoir, Alison Bechdel charts her fraught relationship with her late father.\nDistant and exacting, Bruce Bechdel was an English teacher and director of the town funeral home, which Alison and her family referred to as the Fun Home. It was not until college that Alison, who had recently come out as a lesbian, discovered that her father was also gay. A few weeks after this revelation, he was dead, leaving a legacy of mystery for his daughter to resolve.",
     },
     {
         _id: uuid(),
@@ -22,8 +21,7 @@ module.exports = [
         publisher: 'DC Comics',
         genre: 'superhero',
         pages: 416,
-        synopsis: 'This Hugo Award-winning graphic novel chronicles the fall from grace of a group of super-heroes plagued by all-too-human failings. Along the way, the concept of the super-hero is dissected as the heroes are stalked by an unknown assassin.',
-        synopsis2: 'One of the most influential graphic novels of all time and a perennial best-seller, Watchmen has been studied on college campuses across the nation and is considered a gateway title, leading readers to other graphic novels such as V for Vendetta, Batman: The Dark Knight Returns, and The Sandman series.',
+        synopsis: "This Hugo Award-winning graphic novel chronicles the fall from grace of a group of super-heroes plagued by all-too-human failings. Along the way, the concept of the super-hero is dissected as the heroes are stalked by an unknown assassin.\nOne of the most influential graphic novels of all time and a perennial best-seller, Watchmen has been studied on college campuses across the nation and is considered a gateway \"title\", leading readers to other graphic novels such as V for Vendetta, Batman: The Dark Knight Returns, and The Sandman series.",
     },
     {
         _id: uuid(),
@@ -34,9 +32,7 @@ module.exports = [
         publisher: 'VIZ Media LLC',
         genre: 'manga',
         pages: 184,
-        synopsis: 'Hunters are a special breed, dedicated to tracking down treasures, magical beasts, and even other people. But such pursuits require a license, and less than one in a hundred thousand can pass the grueling qualification exam. Those who do pass gain access to restricted areas, amazing stores of information, and the right to call themselves Hunters.',
-        synopsis2: 'Gon might be a country boy, but he has high aspirations. Despite his Aunt Mito\'s protests, Gon decides to follow in his father\'s footsteps and become a legendary Hunter. The Hunter hopefuls begin their journey by storm-tossed ship, where Gon meets Leorio and Kurapika, the only other applicants who aren\'t devastated by bouts of seasickness.',
-        synopsis3: 'Having survived the terrors of the high seas, Gon and his companions now have to prove their worth in a variety of tests in order to find the elusive Exam Hall. And once they get there, will they ever leave alive...?',
+        synopsis: "Hunters are a special breed, dedicated to tracking down treasures, magical beasts, and even other people. But such pursuits require a license, and less than one in a hundred thousand can pass the grueling qualification exam. Those who do pass gain access to restricted areas, amazing stores of information, and the right to call themselves Hunters.\nGon might be a country boy, but he has high aspirations. Despite his Aunt Mito's protests, Gon decides to follow in his father's footsteps and become a legendary Hunter. The Hunter hopefuls begin their journey by storm-tossed ship, where Gon meets Leorio and Kurapika, the only other applicants who aren't devastated by bouts of seasickness.\nHaving survived the terrors of the high seas, Gon and his companions now have to prove their worth in a variety of tests in order to find the elusive Exam Hall. And once they get there, will they ever leave alive...?",
     },
     {
         _id: uuid(),
@@ -58,7 +54,7 @@ module.exports = [
         publisher: 'VIZ Media LLC',
         genre: 'manga',
         pages: 210,
-        synopsis: 'A new shonen sensation in Japan, this series features Monkey D. Luffy, whose main ambition is to become a pirate. Eating the Gum-Gum Fruit gives him strange powers but also invokes the fruit\'s curse: anybody who consumes it can never learn to swim. Nevertheless, Monkey and his crewmate Roronoa Zoro, master of the three-sword fighting style, sail the Seven Seas of swashbuckling adventure in search of the elusive treasure "One Piece".',
+        synopsis: "A new shonen sensation in Japan, this series features Monkey D. Luffy, whose main ambition is to become a pirate. Eating the Gum-Gum Fruit gives him strange powers but also invokes the fruit's curse: anybody who consumes it can never learn to swim. Nevertheless, Monkey and his crewmate Roronoa Zoro, master of the three-sword fighting style, sail the Seven Seas of swashbuckling adventure in search of the elusive treasure \"One Piece.\"",
     },
     {
         _id: uuid(),
@@ -69,11 +65,7 @@ module.exports = [
         publisher: 'Simon Schuster',
         genre: 'nonfiction',
         pages: 208,
-        synopsis: 'Part graphic novel, part memoir, Wake is an imaginative tour-de-force that tells the story of women-led slave revolts and chronicles scholar Rebecca Hall\'s efforts to uncover the truth about these women warriors who, until now, have been left off the historical record.',
-        synopsis2: 'Women warriors planned and led slave revolts on slave ships during the Middle Passage. They fought their enslavers throughout the Americas. And then they were erased from history.',
-        synopsis3: 'Wake tells the story of Dr. Rebecca Hall, a historian, granddaughter of slaves, and a woman haunted by the legacy of slavery. The accepted history of slave revolts has always told her that enslaved women took a back seat. But Rebecca decides to look deeper, and her journey takes her through old court records, slave ship captain\'s logs, crumbling correspondence, and even the forensic evidence from the bones of enslaved women from the “negro burying ground” uncovered in Manhattan. She finds women warriors everywhere.',
-        synopsis4: 'Using in-depth archival research and a measured use of historical imagination, Rebecca constructs the likely pasts of Adono and Alele, women rebels who fought for freedom during the Middle Passage, as well as the stories of women who led slave revolts in Colonial New York. We also follow Rebecca\'s own story as the legacy of slavery shapes life, both during her time as a successful attorney and later as a historian seeking the past that haunts her.',
-        synopsis5: 'Illustrated beautifully in black and white, Wake will take its place alongside classics of the graphic novel genre, like Marjane Satrapi\'s Persepolis and Art Spiegelman\'s Maus. The story of both a personal and national legacy, it is a powerful reminder that while the past is gone, we still live in its wake.',
+        synopsis: "Part graphic novel, part memoir, Wake is an imaginative tour-de-force that tells the story of women-led slave revolts and chronicles scholar Rebecca Hall’s efforts to uncover the truth about these women warriors who, until now, have been left off the historical record.\nWomen warriors planned and led slave revolts on slave ships during the Middle Passage. They fought their enslavers throughout the Americas. And then they were erased from history.\nWake tells the story of Dr. Rebecca Hall, a historian, granddaughter of slaves, and a woman haunted by the legacy of slavery. The accepted history of slave revolts has always told her that enslaved women took a back seat. But Rebecca decides to look deeper, and her journey takes her through old court records, slave ship captain’s logs, crumbling correspondence, and even the forensic evidence from the bones of enslaved women from the “negro burying ground” uncovered in Manhattan. She finds women warriors everywhere.\nUsing in-depth archival research and a measured use of historical imagination, Rebecca constructs the likely pasts of Adono and Alele, women rebels who fought for freedom during the Middle Passage, as well as the stories of women who led slave revolts in Colonial New York. We also follow Rebecca’s own story as the legacy of slavery shapes life, both during her time as a successful attorney and later as a historian seeking the past that haunts her.\nIllustrated beautifully in black and white, Wake will take its place alongside classics of the graphic novel \"genre\", like Marjane Satrapi’s Persepolis and Art Spiegelman’s Maus. The story of both a personal and national legacy, it is a powerful reminder that while the past is gone, we still live in its wake.",
     },
     {
         _id: uuid(),
@@ -106,9 +98,7 @@ module.exports = [
         publisher: 'Top Shelf Productions',
         genre: 'autobiography',
         pages: 128,
-        synopsis: "March is a vivid first-hand account of John Lewis' lifelong struggle for civil and human rights, meditating in the modern age on the distance traveled since the days of Jim Crow and segregation. Rooted in Lewis' personal story, it also reflects on the highs and lows of the broader civil rights movement.",
-        synopsis2: "Book One spans John Lewis' youth in rural Alabama, his life-changing meeting with Martin Luther King, Jr., the birth of the Nashville Student Movement, and their battle to tear down segregation through nonviolent lunch counter sit-ins, building to a stunning climax on the steps of City Hall.",
-        synopsis3: "Many years ago, John Lewis and other student activists drew inspiration from the 1950s comic book \"Martin Luther King and the Montgomery Story.\" Now, his own comics bring those days to life for a new audience, testifying to a movement whose echoes will be heard for generations."
+        synopsis: "March is a vivid first-hand account of John Lewis’ lifelong struggle for civil and human rights, meditating in the modern age on the distance traveled since the days of Jim Crow and segregation. Rooted in Lewis’ personal story, it also reflects on the highs and lows of the broader civil rights movement.\nBook One spans John Lewis’ youth in rural Alabama, his life-changing meeting with Martin Luther King, Jr., the birth of the Nashville Student Movement, and their battle to tear down segregation through nonviolent lunch counter sit-ins, building to a stunning climax on the steps of City Hall.\nMany years ago, John Lewis and other student activists drew inspiration from the 1950s comic book \"Martin Luther King and the Montgomery Story.\" Now, his own comics bring those days to life for a new audience, testifying to a movement whose echoes will be heard for generations.",
     },
     {
         _id: uuid(),
@@ -119,11 +109,7 @@ module.exports = [
         publisher: 'DC Comics',
         genre: 'superhero',
         pages: 197,
-        synopsis: "This masterpiece of modern comics storytelling brings to vivid life a dark world and an even darker man. Together with inker Klaus Janson and colorist Lynn Varley, writer/artist Frank Miller completely reinvents the legend of Batman in his saga of a near-future Gotham City gone to rot, ten years after the Dark Knight's retirement.",
-        synopsis2: "Crime runs rampant in the streets, and the man who was Batman is still tortured by the memories of his parents' murders. As civil society crumbles around him, Bruce Wayne's long-suppressed vigilante side finally breaks free of its self-imposed shackles.",
-        synopsis3: "Crime runs rampant in the streets, and the man who was Batman is still tortured by the memories of his parents' murders. As civil society crumbles around him, Bruce Wayne's long-suppressed vigilante side finally breaks free of its self-imposed shackles.",
-        synopsis4: "Crime runs rampant in the streets, and the man who was Batman is still tortured by the memories of his parents' murders. As civil society crumbles around him, Bruce Wayne's long-suppressed vigilante side finally breaks free of its self-imposed shackles.",
-        synopsis5: "Crime runs rampant in the streets, and the man who was Batman is still tortured by the memories of his parents' murders. As civil society crumbles around him, Bruce Wayne's long-suppressed vigilante side finally breaks free of its self-imposed shackles.",
+        synopsis: "This masterpiece of modern comics storytelling brings to vivid life a dark world and an even darker man. Together with inker Klaus Janson and colorist Lynn Varley, writer/artist Frank Miller completely reinvents the legend of Batman in his saga of a near-future Gotham City gone to rot, ten years after the Dark Knight's retirement.\nCrime runs rampant in the streets, and the man who was Batman is still tortured by the memories of his parents' murders. As civil society crumbles around him, Bruce Wayne's long-suppressed vigilante side finally breaks free of its self-imposed shackles.\nThe Dark Knight returns in a blaze of fury, taking on a whole new generation of criminals and matching their level of violence. He is soon joined by this generation's Robin—a girl named Carrie Kelley, who proves to be just as invaluable as her predecessors.\nBut can Batman and Robin deal with the threat posed by their deadliest enemies, after years of incarceration have made them into perfect psychopaths? And more important, can anyone survive the coming fallout of an undeclared war between the superpowers—or a clash of what were once the world's greatest superheroes?\nOver fifteen years after its debut, Batman: The Dark Knight Returns remains an undisputed classic and one of the most influential stories ever told in the comics medium.",
     },
     {
         _id: uuid(),
@@ -134,10 +120,7 @@ module.exports = [
         publisher: 'Icon Books',
         genre: 'superhero',
         pages: 176,
-        synopsis: "Activist-academic Meg-John Barker and cartoonist Julia Scheele illuminate the histories of queer thought and LGBTQ+ action in this groundbreaking non-fiction graphic novel.",
-        synopsis2: "From identity politics and gender roles to privilege and exclusion, Queer explores how we came to view sex, gender and sexuality in the ways that we do; how these ideas get tangled up with our culture and our understanding of biology, psychology and sexology; and how these views have been disputed and challenged.",
-        synopsis3: "Along the way we look at key landmarks which shift our perspective of what's 'normal' - Alfred Kinsey's view of sexuality as a spectrum, Judith Butler's view of gendered behaviour as a performance, the play Wicked, or moments in Casino Royale when we're invited to view James Bond with the kind of desiring gaze usually directed at female bodies in mainstream media.",
-        synopsis4: "Presented in a brilliantly engaging and witty style, this is a unique portrait of the universe of queer thinking.",
+        synopsis: "Activist-academic Meg-John Barker and cartoonist Julia Scheele illuminate the histories of queer thought and LGBTQ+ action in this groundbreaking non-fiction graphic novel.\nFrom identity politics and gender roles to privilege and exclusion, Queer explores how we came to view sex, gender and sexuality in the ways that we do; how these ideas get tangled up with our culture and our understanding of biology, psychology and sexology; and how these views have been disputed and challenged.\nAlong the way we look at key landmarks which shift our perspective of what’s ‘normal’ – Alfred Kinsey’s view of sexuality as a spectrum, Judith Butler’s view of gendered behaviour as a performance, the play Wicked, or moments in Casino Royale when we’re invited to view James Bond with the kind of desiring gaze usually directed at female bodies in mainstream media.\nPresented in a brilliantly engaging and witty style, this is a unique portrait of the universe of queer thinking.",
     },
     {
         _id: uuid(),
@@ -148,6 +131,6 @@ module.exports = [
         publisher: 'Harry N. Abrams',
         genre: 'dystopian',
         pages: 284,
-        synopsis: "In this graphic novel adaptation of Octavia E. Butler's Parable of the Sower by Damian Duffy and John Jennings, the award-winning team behind Kindred: A Graphic Novel Adaptation, the author portrays a searing vision of America's future. In the year 2024, the country is marred by unattended environmental and economic crises that lead to social chaos. Lauren Olamina, a preacher's daughter living in Los Angeles, is protected from danger by the walls of her gated community. However, in a night of fire and death, what begins as a fight for survival soon leads to something much more: a startling vision of human destiny . . . and the birth of a new faith.",
+        synopsis: "In this graphic novel adaptation of Octavia E. Butler’s Parable of the Sower by Damian Duffy and John Jennings, the award-winning team behind Kindred: A Graphic Novel Adaptation, the \"author\" portrays a searing vision of America’s future. In the year 2024, the country is marred by unattended environmental and economic crises that lead to social chaos. Lauren Olamina, a preacher’s daughter living in Los Angeles, is protected from danger by the walls of her gated community. However, in a night of fire and death, what begins as a fight for survival soon leads to something much more: a startling vision of human destiny . . . and the birth of a new faith.",
     },
 ];

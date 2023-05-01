@@ -11,9 +11,9 @@ module.exports = {
     },
     update: (req, res) => {
         const { _id } = req.params;
-        const newBook = data.find(book => book._id === _id);
+        const foundBook = data.find(book => book._id === String(_id));
         res.render('pages/update', {
-            inventoryItem: newBook
+            newBook: foundBook
         });
     }
 }
