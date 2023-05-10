@@ -1,7 +1,7 @@
 {
-  "name": "codesquad-comics",
+  "name": "codesquad-comics-course-project-wei",
   "version": "1.0.0",
-  "description": "Course project: CODESQUAD COMICS",
+  "description": "CodeSquad comics is a collection of graphic novels read by Wei Cheng.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/CodeSquad-Boston/course-project-chengwei0815.git"
   },
+  "keywords": [
+    "comics",
+    "CodeSquad"
+  ],
   "author": "Wei CHENG",
   "license": "ISC",
   "bugs": {
@@ -23,7 +27,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "method-override": "^3.0.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^6.3.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

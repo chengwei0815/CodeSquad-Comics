@@ -15,6 +15,8 @@ app.use(methodOverride('_method'))
 app.use(morgan('combined'));
 app.use(routes);
 
+require('./config/connection');
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
