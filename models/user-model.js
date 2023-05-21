@@ -14,7 +14,7 @@ const userSchema = new Schema({
     },
     googleId: {
         type: String,
-    },
+    }
 });
 
 userSchema.plugin(passportLocalMongoose);
@@ -49,4 +49,3 @@ passport.use(new GoogleStrategy({
 ));
 
 module.exports = User;
-

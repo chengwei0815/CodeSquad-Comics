@@ -8,7 +8,7 @@ module.exports = {
                 return error;
             } else {
                 res.render('pages/bookDetail', {
-                    newBook: foundComic,
+                    newBook: foundComic
                 });
             }
         })
@@ -23,7 +23,7 @@ module.exports = {
             pages: pages,
             rating: rating,
             synopsis: synopsis,
-            image: image,
+            image: image
         });
         newComic.save();
         res.redirect('/admin-console');
@@ -57,5 +57,5 @@ module.exports = {
                 res.redirect('/admin-console');
             }
         })
-    },
+    }
 }

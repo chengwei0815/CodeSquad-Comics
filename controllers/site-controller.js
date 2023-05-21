@@ -21,7 +21,7 @@ module.exports = {
         res.render('pages/login');
     },
     login_post: (req, res) => {
-        const { username, psssword } = req.body;
+        const { username, password } = req.body;
         const user = new User({
             username: username,
             password: password
