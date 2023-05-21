@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/codesquadComics', {useNewUrlParser: true, useUnifiedTopology: true},
-(error) => {
+
+mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true },
+  (error) => {
     if (!error) {
-        console.log("Successful connection with MonogoDB Server");
+      console.log("Successful connection with MongoDB Server");
     } else {
-        console.log("Error with MongoDB's connectivity");
+      console.log("Error with MongoDB's connectivity");
     }
-});
+  }
+);
+
+// mongoose.connect: the connection string needs to insert db name in between the '.net/' and '?' in line 4 here
