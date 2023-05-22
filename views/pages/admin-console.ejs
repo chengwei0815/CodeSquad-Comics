@@ -25,7 +25,7 @@
                     <tr>
                         <td><%= singleArray.title %></td>
                         <td><a href='/admin-console/update-book/<%= singleArray._id %>'><button class="button-edit" type="button">EDIT</button></a></td>
-                        <td><a href="/admin-console/update-book/<%= singleArray._id %>"><button class="button-yellow" type="submit">DELETE</button></a></td>
+                        <td><form action="/books/<%= singleArray._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded"><button class="button-yellow" type="submit" value="Delete">DELETE</button></form></td>
                     </tr>
                 <% } %>
 
