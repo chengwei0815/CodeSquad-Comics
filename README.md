@@ -4,10 +4,10 @@
 <br />
 <div align="center">
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center"></h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+   
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
