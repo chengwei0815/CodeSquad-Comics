@@ -50,16 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+CodeSquad Comics is a collection of graphic novels read by Rachel Sensenig. The site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. You can browse through the complete collection on the homepage. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.
 
 Use the `BLANK_README.md` to get started.
 
@@ -69,16 +60,10 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [Node.js](https://Node.org/)
+* [Express](https://Express.io/)
+* [Mongoose](https://Mongoose.dev/)
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -87,12 +72,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -100,20 +81,18 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Run the server
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   node app.js
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -121,11 +100,9 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Project Status
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This project deployed on Cyclic. My Admin dashboard fully works in live.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -134,9 +111,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@chengwei0815](https://twitter.com/chengwei0815) - chengwei0815@gmail.com
+Wei Cheng - [@chengwei0815] - chengwei666111@gmail.com
 
-Project Link: [https://github.com/chengwei0815](https://github.com/chengwei0815)
+Project Link: [https://amused-teddy-calf.cyclic.app/](https://amused-teddy-calf.cyclic.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,15 +122,11 @@ Project Link: [https://github.com/chengwei0815](https://github.com/chengwei0815)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+I would like to thank the 2023 cohort of CodeSquad, including classmates, TFs, and my mentor Danielle Pedrides for their support and guidance.
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
+
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [A Complete Guide to Flexbox]([https://css-tricks.com/snippets/css/a-guide-to-flexbox/])
 
 <p align="right">(<a href="#top">back to top</a>)</p>
